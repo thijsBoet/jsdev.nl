@@ -6,6 +6,7 @@ body {
   justify-content: center;
   font-family: "Neutraface Text", sans-serif;
   text-align: center;
+  overflow-x: 0;
 }
 .navbar {
   background: #F3F3F3;
@@ -25,16 +26,39 @@ body {
 }
 
 ul {
+  margin: 0;
+  padding: 1rem 0;
   list-style-type: none;
-  width: 200px;
+  width: 100vw;
+  text-align: center;
+  background-color: #F7DF1E;
+}
+
+ul li a {
+  font-family: "Neutraface Text", sans-serif;
+  color: #000;
+  font-size: 24px;
+  font-weight: bold;
   cursor: pointer;
-  background-color: #f1f1f1;
+  text-decoration: none;
+}
+ul li a:hover {
+  text-decoration: underline;
 }
 
 footer {
   background: #F3F3F3;
   padding: 1rem;
   display: flex;
+}
+
+footer p a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+footer p a:hover {
+  text-decoration: underline;
 }
 
 /* Normalize.sass */
